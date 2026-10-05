@@ -13,6 +13,14 @@ RBRACKET: ']';
 LBRACE: '{';
 RBRACE: '}';
 ASSIGN: '=';
+EQ: '==';
+NEQ: '!=';
+GT: '>';
+GE: '>=';
+LT: '<';
+LE: '<=';
+AND: '&&';
+OR: '||';
 COMMA: ',';
 INCREMENT: '++';
 PLUS: '+';
@@ -20,8 +28,30 @@ DECREMENT: '--';
 MINUS: '-';
 ASTERISK: '*';
 DIV: '/';
+MOD: '%';
 QMARK: '?';
 COLON: ':';
+
+// Keywords
+PROGRAM: 'program';
+CONST: 'const';
+ENUM: 'enum';
+CLASS: 'class';
+ABSTRACT: 'abstract';
+EXTENDS: 'extends';
+IF: 'if';
+ELSE: 'else';
+BREAK: 'break';
+CONTINUE: 'continue';
+RETURN: 'return';
+READ: 'read';
+PRINT: 'print';
+SWITCH: 'switch';
+CASE: 'case';
+FOR: 'for';
+NEW: 'new';
+LENGTH: 'length';
+VOID: 'void';
 
 ID: [_a-zA-Z][_a-zA-Z0-9]*;
 INT: [0-9]

@@ -29,9 +29,7 @@ public class Main {
     CommonTokenStream tokens = new CommonTokenStream(lexer);
 
     CParser parser = new CParser(tokens);
-
-    ParseTree tree = parser.program();
-
-    System.out.println(tree.toStringTree(parser));
+    CParser.CompilationUnitContext ctx = parser.compilationUnit();
+    System.out.println(ctx.getChildCount());
   }
 }
