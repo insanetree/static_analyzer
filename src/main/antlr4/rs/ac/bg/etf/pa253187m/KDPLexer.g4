@@ -1,4 +1,4 @@
-lexer grammar CLexer;
+lexer grammar KDPLexer;
 
 LINE_COMMENT: '//' ~[\r\n]* -> skip;
 BLOCK_COMMENT: '/*' .*? '*/' -> skip;
@@ -34,6 +34,7 @@ COLON: ':';
 
 // Keywords
 PROGRAM: 'program';
+PROCESS: 'process';
 CONST: 'const';
 ENUM: 'enum';
 CLASS: 'class';

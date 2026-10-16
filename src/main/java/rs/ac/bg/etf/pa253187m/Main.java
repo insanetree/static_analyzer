@@ -25,11 +25,11 @@ public class Main {
       System.exit(1);
     }
 
-    CLexer lexer = new CLexer(input);
+    KDPLexer lexer = new KDPLexer(input);
     CommonTokenStream tokens = new CommonTokenStream(lexer);
 
-    CParser parser = new CParser(tokens);
-    CParser.CompilationUnitContext ctx = parser.compilationUnit();
+    KDPParser parser = new KDPParser(tokens);
+    KDPParser.CompilationUnitContext ctx = parser.compilationUnit();
     System.out.println(ctx.getChildCount());
   }
 }

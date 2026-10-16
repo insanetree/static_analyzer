@@ -1,0 +1,18 @@
+// This is a comment
+/* 
+ * This is a multiline comment
+ */
+
+// This is a function definition
+mutex m1;
+mutex m2;
+
+process P1 {
+    lock(m1);
+    lock(m2);
+}
+
+process P2 {
+    lock(m2);
+    lock(m1);
+}
