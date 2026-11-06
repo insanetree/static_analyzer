@@ -3,6 +3,8 @@ package rs.ac.bg.etf.pa253187m;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
+import rs.ac.bg.etf.pa253187m.ast.*;
+
 import java.io.IOException;
 import java.nio.file.Path;
 
@@ -29,6 +31,7 @@ public class Main {
     CommonTokenStream tokens = new CommonTokenStream(lexer);
 
     KDPParser parser = new KDPParser(tokens);
+    parser.addParseListener(new AstBuilder());
     KDPParser.CompilationUnitContext ctx = parser.compilationUnit();
     System.out.println(ctx.getChildCount());
   }
