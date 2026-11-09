@@ -1,6 +1,11 @@
 package rs.ac.bg.etf.pa253187m.symbols;
 
 public class Symbol {
+    public enum SymbolType {
+        PROCESS,
+        LOCK
+    }
+
     private final SymbolType type;
     private final String name;
     private final int id;
