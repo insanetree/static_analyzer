@@ -1,9 +1,20 @@
 package rs.ac.bg.etf.pa253187m.symbols;
 
+import java.util.Objects;
+
 public class Symbol {
     public enum SymbolType {
-        PROCESS,
-        LOCK
+        VOID,
+        INTEGER,
+        ARRAY
+    }
+    
+    public enum SymbolKind {
+        CONSTANT,
+        VARIABLE,
+        TYPE,
+        FUNCTION,
+        PROCESS
     }
 
     private final SymbolType type;

@@ -30,4 +30,8 @@ public class Scope {
     return enclosingScope.lookup(name);
   }
 
+  public Scope getEnclosingScope() {
+    return enclosingScope;
+  }
+
 }
